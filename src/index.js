@@ -6,18 +6,19 @@ import SeasonDisplay from './SeasonDisplay';
 
 class App extends React.Component {
 
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         message: '',
-    //         lat: null
-    //     };
-    // }
+    constructor(props){
+        super(props);
+        this.state = {
+            message: '',
+            lat: null
+        };
+    }
 
-    state = {
-        message: '',
-        lat: null
-    };
+    // Can do this instead of the constructor method
+    // state = {
+    //     message: '',
+    //     lat: null
+    // };
 
     componentDidMount(){
         window.navigator.geolocation.getCurrentPosition(
